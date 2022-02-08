@@ -1,0 +1,240 @@
+/* ---------------------------------- CONFIGURAÇÕES GERAIS ----------------------------------*/
+:root{
+    /*------Fontes------*/
+    --main-font: "PlayfairDisplay-Bold", serif;
+    --second-font: "Roboto", sans-serif;
+    /*------Cores------*/
+    --black: black;
+    --light-peach: #ffdbbc;
+    --active-link-color:#e82147;
+    --inactive-link-color: #969090;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-grid{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* ---------------------------------- HEADER ----------------------------------*/
+#header, #main{
+    background-color: var(--light-peach);
+}
+
+.header{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header div input {
+    width: 25rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 16.5px;
+    box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+    position: relative;
+}
+
+.header div #search-bar-img{
+    position: absolute;
+    top: 6.2%;
+    left: 62%;
+}
+
+.header div input::placeholder {
+    color: var(--inactive-link-color);
+    font-family: var(--second-font);
+    padding: 2rem;
+}
+
+#user{
+    color: var(--active-link-color);
+    text-decoration: none;
+    font-family: var(--second-font);
+    display: flex;
+    align-items: center;
+}
+
+#user #user-img{
+    background-color: var(--active-link-color);
+    margin-left: 0.5rem;
+    height: 40px;
+    width: 40px;
+    padding: 5%;
+    border-radius: 50%;
+}
+
+/* ---------------------------------- MAIN ----------------------------------*/
+#main{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    position: relative;
+}
+
+#main-decoration{
+    position: absolute;
+    height: 220px;
+    width: 180px;
+    left: 10%;
+
+}
+
+#main .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto
+}
+
+.h1 {
+    color: var(--black);
+    font-family: var(--main-font);
+    margin-bottom: 3rem;
+    font-size: 28px;
+}
+
+#main-right, #main-left{
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#main-left h1 #user-full-name {
+    color: var(--active-link-color);
+}
+
+#main-left p {
+    font-family: var(--second-font);
+}
+
+#main-left p #recipe-autor{
+    color: var(--active-link-color);
+}
+
+#main-right {
+    background-image: url(../img/Elemento_1@2x.png);
+    background-size: cover;
+    background-position: center;
+    width: 302.1px;
+    height: 220.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-right .prato-main {
+    width: 225px;
+    height: 180px;
+    position: relative;
+    z-index: 1;
+}
+
+#link-main{
+    margin: 1rem 0 1rem 2rem;
+    position: absolute;
+    bottom: 0;
+    z-index:-1
+    /* display: none; */
+}
+
+#main-right a {
+    font-family: var(--second-font);
+    color: var(--active-link-color);
+    background-color: white;
+    text-decoration: none;
+}
+
+
+/* ---------------------------------- ARTICLE ----------------------------------*/
+#latest-recipes {
+    padding: 3rem;
+}
+
+#latest-recipes h1{
+    text-align: center;
+}
+
+#decoration-between-sections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---------------------------------- SECTION ----------------------------------*/
+#filter-recipes {
+    padding: 3rem;
+}
+
+#position-filter-recipes {
+    display: flex;
+    justify-content: center;
+}
+#filter-recipes h1{
+    text-align: center;
+}
+
+#filter-recipes-menu, #filter-recipes-pictures{
+    width: 40%;
+}
+
+#filter-recipes-menu nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+/* ---------------------------------- FOOTER----------------------------------*/
+#footer {
+    background-image: url(../img/Rodapé@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 122px;
+    padding: 5rem;
+    position: relative;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-left{
+    display: flex;
+    align-items: center;
+}
+
+
+.footer-right{
+    display: flex;
+    align-items: center;
+}
+
+.footer-right a{
+    color: white;
+    transition: 400ms;
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.footer-right a:hover{
+    color: var(--active-link-color);
+    transition: 400ms;
+}
+
+#footer-decoration{
+    position: absolute;
+    bottom: 46%;
+    right: 10%
+}

@@ -4,34 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/Logo_Cookfy.png" type="image/x-icon">
+
+    <!-- Importe folha de estilos do Site -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Importe do Font Awsome-->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!--Importe fontes do Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+
     <title>Cookfy</title>
 </head>
 <body>
 
-    <header>
-        <img src="" alt="" id="logo">
-        <input type="search"><img src="" alt="" id="search-bar">
-        <div id="user">
-            <a href="">
-                <img src="" alt="" id="user-img">
-                <p id="user-name"></p> 
-            </a>  
+    <header id="header" >
+        <div class="header container-grid">
+            <img src="img/Logo_Cookfy@2x.png" alt="Logo do Site Cookfy" id="logo">
+            <div>
+                <input type="search" placeholder="Pesquise alguma receita">
+                <a href=""><img src="img/Lupa@2x.png" alt="Botão de busca" id="search-bar-img"></a>
+            </div>
+            <div>
+                <a  id="user" href="#">
+                    <p id="user-name"><span id="user-name-menu">Marina</span></p> 
+                    <img src="img/Avatar_feminino.png" alt="Foto do usuário" id="user-img">
+                </a>  
+            </div>
         </div>
     </header>
 
-    <main>
-        <div id="main-right">
-            <h1></h1>
-            <p></p>
-        </div>
-        <div id="main-left">
-            <img src="" alt="">
-            <p></p>
+    <main id="main">
+        <img id="main-decoration" src="img/Elemento_2@2x.png" alt="">
+        <div class="main container-grid">
+            <div id="main-left">
+                <h1 class="h1">Bem vindo de volta <span id="user-full-name"> Marina Wedderhoff</span></h1>
+                <p>Contribuição da comunidade: <br> <span id="recipe-on-main"> Ceviche de peixe branco <br> <span id="recipe-autor"> Por Michel Filipe</span></span></p>
+            </div>
+            <div id="main-right">
+                <a href="#"> <img class="prato-main" src="img/ceviche.jpg" alt="Foto de um prato de Ceviche">
+                <div id="link-main">
+                    <img onmouseover=" showDescription ()" src="img/Seta_direita@2x.png" alt=""> Ver foto
+                </div></a>
+            </div>
         </div>
     </main>
 
-    <article id="latest-recipes">
-        <h2></h2>
+    <article id="latest-recipes" class="container-grid">
+        <h1 class="h1"> Experimente alguma das últimas receitas</h1>
         <ul>
             <li id="recipe">
                 <div>
@@ -43,14 +66,14 @@
                     <h3></h3>
                     <p>
                         <div>
-                            <p></p>
+                            <p>Ver receita</p>
                             <img src="" alt="">
                         </div>
                     </p>
                 </div>
             </li>
 
-            <li id="recipe">
+            <li id="recipe" class="container-grid">
                 <div>
                     <img src="" alt="">
                     <p></p>
@@ -60,14 +83,14 @@
                     <h3></h3>
                     <p>
                         <div>
-                            <p></p>
+                            <p>Ver receita</p>
                             <img src="" alt="">
                         </div>
                     </p>
                 </div>
             </li>
 
-            <li id="recipe">
+            <li id="recipe" class="container-grid">
                 <div>
                     <img src="" alt="">
                     <p></p>
@@ -77,14 +100,14 @@
                     <h3></h3>
                     <p>
                         <div>
-                            <p></p>
+                            <p>Ver receita</p>
                             <img src="" alt="">
                         </div>
                     </p>
                 </div>
             </li>
 
-            <li id="recipe">
+            <li id="recipe" class="container-grid">
                 <div>
                     <img src="" alt="">
                     <p></p>
@@ -94,14 +117,14 @@
                     <h3></h3>
                     <p>
                         <div>
-                            <p></p>
+                            <p>Ver receita</p>
                             <img src="" alt="">
                         </div>
                     </p>
                 </div>
             </li>
 
-            <li id="recipe">
+            <li id="recipe" class="container-grid">
                 <div>
                     <img src="" alt="">
                     <p></p>
@@ -111,7 +134,7 @@
                     <h3></h3>
                     <p>
                         <div>
-                            <p></p>
+                            <p>Ver receita</p>
                             <img src="" alt="">
                         </div>
                     </p>
@@ -120,34 +143,48 @@
         </ul>
     </article>
 
-    <section id="filter-recipes">
-        <h2></h2>
-        <div>
-            <nav>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a></nav>
-        </div>
-        <div>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+    <div id="decoration-between-sections">
+        <img  src="img/Elemento_5@3x.png" alt="">
+    </div>
+
+    <section id="filter-recipes" class="container-grid"> 
+        <h1 class="h1"> Entre no mundo gastronômico</h1>
+        <div id="position-filter-recipes">
+            <div id="filter-recipes-menu">
+                <nav>
+                    <a class="cozinha" href=""><img src="" alt="Ícone de cozinha"> Cozinha</a>
+                    <a class="patisserie" href=""> <img src="" alt="Ícone de patisserie"> Patisserie</a>
+                    <a class="drinks" href=""><img src="" alt="Ícone de bebida"> Drinks</a></nav>
+            </div>
+            <div id="filter-recipes-pictures">
+                <img class="cozinha hidden" src="" alt="Imagem de uma cozinha">
+                <img class="patisserie " src="img/food-filter-2.png" alt="Imagem de um prato de Patisserie">
+                <img class="drinks hidden" src="" alt="Imagem de drinks">
+            </div>
         </div>
     </section>
 
-    <footer>
-        <div>
-            <logo></logo>
-            <h5></h5>
-        </div>
-        <div>
-            <a href="" id="social-media"><img src="" alt=""></a>
-            <a href="" id="social-media"><img src="" alt=""></a>
-            <a href="" id="social-media"><img src="" alt=""></a>
-            <a href="" id="social-media"><img src="" alt=""></a>
-            <a href="" id="social-media"><img src="" alt=""></a>
+    <footer id="footer">
+        <img id="footer-decoration" src="img/Rodapé_elemento_2@2x.png" alt="">
+        <div class="footer container-grid">
+            <div class="footer-left"> 
+                <img src="img/Logo_Cookfy.png" alt="Logo do site Cookfy">
+                <h5> &copy; 2020 Cookfy.</h5>
+            </div>
+            <div class="footer-right">
+                <a href="#" id="social-media" > <i class="fab fa-facebook-square"></i></a>
+                <a href="#" id="social-media" > <i class="fab fa-instagram"></i> </a>
+                <a href="#" id="social-media" > <i class="fab fa-twitter"></i> </a>
+                <a href="#" id="social-media" > <i class="fab fa-linkedin"></i> </a>
+                <a href="#" id="social-media" > <i class="fab fa-pinterest"> </i></a>
+            </div>
         </div>
     </footer>
-    
+
+    <!--Importe do scritp do FontAwsone-->
+    <script src="js/all.min.js"></script>
+
+    <!--Importe do scritp do site-->
+    <script src="js/script.js"></script>
 </body>
 </html>
