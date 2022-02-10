@@ -22,6 +22,10 @@
     margin: 0 auto;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* ---------------------------------- HEADER ----------------------------------*/
 #header, #main{
     background-color: var(--light-peach);
@@ -98,7 +102,7 @@
     color: var(--black);
     font-family: var(--main-font);
     margin-bottom: 3rem;
-    font-size: 28px;
+    font-size: 2.2rem;
 }
 
 #main-right, #main-left{
@@ -158,10 +162,22 @@
 /* ---------------------------------- ARTICLE ----------------------------------*/
 #latest-recipes {
     padding: 3rem;
+    position: relative;
 }
+
+#lastest-recipes-decoration{
+    position: absolute;
+    top: 10%;
+    right: 0%;
+}
+
 
 #latest-recipes h1{
     text-align: center;
+}
+
+#latest-recipes h3{
+    font-size: 1.8rem;
 }
 
 #decoration-between-sections{
@@ -170,9 +186,51 @@
     align-items: center;
 }
 
+#recipe{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#recipe div{
+    width: 28%;
+}
+
+#recipe p {
+    color: var(--active-link-color);
+    font-family: var(--second-font);
+}
+
+#recipe-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#star-rate {
+    display: flex;
+}
+
+#star-rate img{
+    margin-left: 1rem;
+}
+
 /* ---------------------------------- SECTION ----------------------------------*/
 #filter-recipes {
     padding: 3rem;
+    position: relative;
+}
+
+#filter-recipes-first-decoration{
+    position: absolute;
+    top: -5%;
+    left: 0%;
+    width: 8rem;
+    height: 8rem;
+}
+
+.hidden {
+    display: none;
 }
 
 #position-filter-recipes {
@@ -185,14 +243,48 @@
 
 #filter-recipes-menu, #filter-recipes-pictures{
     width: 40%;
+    position: relative;
+}
+
+#filter-recipes-second-decoration{
+    position: absolute;
+    top: 40%;
+    right: 0%;
+    width: 8rem;
+    height: 8.5rem;
 }
 
 #filter-recipes-menu nav{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
+
+#filter-recipes-menu nav div {
+    width: 225px;
+    height: 64.5px;
+    margin: 10px 10px 10px 29.1px;
+    padding: 17px 58.5px 17.1px 52px;
+    border: #f0f0f0 solid 0.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#filter-recipes-menu nav div:hover {
+    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.16);
+}
+
+#filter-recipes-menu nav div a{
+    color: var(--inactive-link-color);
+    transition: 400ms;
+}
+
+#filter-recipes-menu nav div a:hover{
+    color: var(--active-link-color);
+    transition: 400ms;
+}
+
 
 
 /* ---------------------------------- FOOTER----------------------------------*/
@@ -210,11 +302,15 @@
     justify-content: space-around;
 }
 
+#footer .footer h5{
+    display: flex;
+    font-size: 1rem;
+}
+
 .footer-left{
     display: flex;
     align-items: center;
 }
-
 
 .footer-right{
     display: flex;
